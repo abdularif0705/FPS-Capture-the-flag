@@ -16,8 +16,7 @@ public class WeaponSwitching : MonoBehaviour
 
     private void Update()
     {
-        if(PV.IsMine){
-
+        // if(PV.IsMine){
             int previousSelectedWeapon = selectedWeapon;
             
             if (Input.GetAxis("Mouse ScrollWheel") > 0) // if > 0 scrolled up
@@ -55,7 +54,7 @@ public class WeaponSwitching : MonoBehaviour
             {
                 SelectWeapon(); // enable and disable the corresponding objects
             }
-        }
+        // }
     }
 
     void SelectWeapon() // loop through all weapons and enable the weapon that matches the weapon index and vice versa

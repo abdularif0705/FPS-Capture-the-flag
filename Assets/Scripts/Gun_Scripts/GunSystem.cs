@@ -66,7 +66,7 @@ public class GunSystem : MonoBehaviour
         float y = Random.Range(-spread, spread);
 
         //Calculate Direction with Spread
-        if(PV.IsMine){
+        // if(PV.IsMine){
 
             Vector3 direction = fpsCam.transform.forward + new Vector3(x, y, 0);
 
@@ -94,7 +94,7 @@ public class GunSystem : MonoBehaviour
 
             if(bulletsShot > 0 && bulletsLeft > 0)
                 Invoke("Shoot", timeBetweenShots);
-        }
+        // }
     }
     private void ResetShot()
     {
